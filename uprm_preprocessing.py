@@ -93,7 +93,7 @@ def lat_long(utm_frame):
         utm_data = elm[0].split(' ')
         x = float(utm_data[0])
         y = float(utm_data[1])
-        coord = utm.to_latlon(x, y, 18, 'N')
+        coord = utm.to_latlon(x, y, 19, 'N')
         lat.append(coord[0])
         long.append(coord[1])
     return lat, long
